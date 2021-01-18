@@ -1,4 +1,17 @@
-.Intestazione{
+.main{
+    
+    width: 1000px;
+    height: 1000px;
+    top: 50%;
+    left: 50%;
+    margin-top: 500px;
+    margin-left: 325px;
+    margin-right:250px;
+
+}
+
+
+.intestazione{
            
     /*TESTO*/
     color: white; 
@@ -9,24 +22,24 @@
     /*CARATTERISTICHE*/
     background-image: url(space.jpg);
     padding:30px;
-    width: 250px;
-    height: 250px;            
+    width: 350px;
+    height: 350px;            
     border-radius: 10px;
     float:left;
-    
-   
+      
 }
 
-.Login{
+.login{
   
    /*TESTO*/
     color: grey;
     font-size: 10px;
     font-family:Arial, Helvetica, sans-serif;
+
    
    /*CARATTERISTICHE*/
-    width: 250px;
-    height: 300px;
+    width: 350px;
+    height: 500px;
     float:left;
 
     border-color: black;
@@ -35,13 +48,15 @@
 
     padding: 60px 30px 10px 30px;
 
+   
+
 }
 
-.Login input{
+.login input{
     border: 0px;
 }
 
-.Login #btn1{
+.login #btn1{
 
     /*TESTO*/
     text-align: center;
@@ -55,12 +70,10 @@
 
     background-color:darkturquoise;
     padding: 15px 33px;
-
-    margin-left: 40px;
-    margin-right: 40px;
+    margin: 10px 100px 20px 100px;
 }
 
-.Login #btn2{
+.login #btn2{
     
     /*TESTO*/
     text-align: center;
@@ -71,7 +84,5 @@
     /*CARATTERISTICHE*/
     background-color:white;
     border:0px;
-    
-    margin: 10px 20px 10px 20px;
-    
+    margin: 40px 100px 50px 100px;    
 }
