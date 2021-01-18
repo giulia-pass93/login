@@ -1,0 +1,77 @@
+.Intestazione{
+           
+    /*TESTO*/
+    color: white; 
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:initial;
+    font-size: 13px;
+    
+    /*CARATTERISTICHE*/
+    background-image: url(space.jpg);
+    padding:30px;
+    width: 250px;
+    height: 250px;            
+    border-radius: 10px;
+    float:left;
+    
+   
+}
+
+.Login{
+  
+   /*TESTO*/
+    color: grey;
+    font-size: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+   
+   /*CARATTERISTICHE*/
+    width: 250px;
+    height: 300px;
+    float:left;
+
+    border-color: black;
+    background-color: white;
+    border-radius: 10px;
+
+    padding: 60px 30px 10px 30px;
+
+}
+
+.Login input{
+    border: 0px;
+}
+
+.Login #btn1{
+
+    /*TESTO*/
+    text-align: center;
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:white;
+
+    /*CARATTERISTICHE*/           
+    border-radius: 30px;
+    border: 0px;
+
+    background-color:darkturquoise;
+    padding: 15px 33px;
+
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.Login #btn2{
+    
+    /*TESTO*/
+    text-align: center;
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:grey;
+   
+    /*CARATTERISTICHE*/
+    background-color:white;
+    border:0px;
+    
+    margin: 10px 20px 10px 20px;
+    
+}
