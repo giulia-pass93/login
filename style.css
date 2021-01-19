@@ -1,13 +1,10 @@
 .main{
-    
-    width: 1000px;
-    height: 1000px;
-    top: 50%;
-    left: 50%;
-    margin-top: 500px;
-    margin-left: 325px;
-    margin-right:250px;
-
+   
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-top: 25%;
+    margin-bottom: 25%;
 }
 
 
@@ -16,8 +13,12 @@
     /*TESTO*/
     color: white; 
     font-family:Arial, Helvetica, sans-serif;
-    text-align:initial;
     font-size: 13px;
+    display:flex;
+    text-align:initial;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
     /*CARATTERISTICHE*/
     background-image: url(space.jpg);
@@ -25,9 +26,9 @@
     width: 350px;
     height: 350px;            
     border-radius: 10px;
-    float:left;
       
 }
+
 
 .login{
   
@@ -40,20 +41,18 @@
    /*CARATTERISTICHE*/
     width: 350px;
     height: 500px;
-    float:left;
 
     border-color: black;
     background-color: white;
     border-radius: 10px;
 
     padding: 60px 30px 10px 30px;
-
    
-
 }
 
 .login input{
     border: 0px;
+    outline: none;
 }
 
 .login #btn1{
@@ -71,6 +70,8 @@
     background-color:darkturquoise;
     padding: 15px 33px;
     margin: 10px 100px 20px 100px;
+    outline: none;
+    cursor: pointer;
 }
 
 .login #btn2{
@@ -79,10 +80,13 @@
     text-align: center;
     font-size: 15px;
     font-family:Arial, Helvetica, sans-serif;
-    color:grey;
+    color: grey;
+    
    
     /*CARATTERISTICHE*/
     background-color:white;
     border:0px;
-    margin: 40px 100px 50px 100px;    
+    padding: 40px 100px 50px 100px;   
+    outline: none;
+    cursor: pointer;
 }
