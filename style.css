@@ -1,3 +1,12 @@
+body{
+    background-image: linear-gradient(to right,rgb(73, 4, 119),violet);
+     margin:0; 
+     padding:0; 
+     height: 100%;
+}
+
+
+
 .main{
    
     display: flex;
@@ -46,10 +55,8 @@
     background-color: white;
     border-radius: 10px;
 
-    padding: 60px 30px 10px 30px;
-    margin-top: 25%;
+    padding:30px;
 
-   
 }
 
 .login input{
@@ -91,4 +98,53 @@
     padding: 40px 100px 50px 100px;   
     outline: none;
     cursor: pointer;
+}
+
+@media screen and (max-width: 850px) {
+    .main {
+        flex-direction: column;    
+    }
+  }
+@media screen and (max-width: 450px){
+    
+    .intestazione{
+        width: 260px;
+        height: 260px; 
+    }
+
+    .login{
+        width: 260px;
+        height: 410px;
+    }
+    
+    .intestazione p{
+        display: none;
+    }
+
+}
+/*A questa dimensione i bottoni non si dimensionano più in funzione del div */
+
+@media screen and (max-width: 350px){
+    
+    .intestazione{
+        width: 160px;
+        height: 160px; 
+    }
+
+    .login{
+        width: 160px;
+        height: 310px;
+    }
+    .login #btn1{
+        flex-basis: 10%;
+        flex-shrink: 1;
+    }
+    .login #btn2{
+        flex-basis: 10%;
+        flex-shrink: 1;
+    }
+    .intestazione p{
+        display: none;
+    }
+
 }
