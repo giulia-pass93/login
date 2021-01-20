@@ -76,7 +76,7 @@ hr{
     margin: 10px 0px 10px 0px;
 }
 
-.login .button-primary{
+.button-primary{
     text-align: center;
     font-size: 15px;
     font-family:Arial, Helvetica, sans-serif;
@@ -86,14 +86,14 @@ hr{
     cursor: pointer;
 }
 
-.login #btn1{
+#btn1{
     color:white;
     background-color:darkturquoise;
     padding: 15px 33px;
     width: 150px;
 }
 
-.login #btn2{
+#btn2{
     color: grey;
     background-color:white;   
 }
