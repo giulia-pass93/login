@@ -6,42 +6,44 @@
     <title>Esercizio1</title>
 
     <link rel="stylesheet" href="style.css">
-    <!--<link rel="stylesheet" media="screen and (min-width: 600px)" href="media-queries.css">-->
-
+    
 </head>
 
 <body>
 
     <div class ="main">
 
-        <div class="intestazione">
-               
-                <h1 ><b>Duis mollis,<br>est non<br>commodo<br>luctus.</b></h1>
-
-                <p>Nulla vitae elit libero, a<br><br>pharetra augue. Lorem ipsum<br><br>dolor sit amet, consectetur.</p>
-        
+        <div class="intestazione flex_elements">
+            <div style="width: 150px;">
+                <div>
+                <h1 ><b>Duis mollis, est non commodo luctus.</b></h1>
+                </div>
+                <div>
+                <p>Nulla vitae elit libero, a  pharetra augue. Lorem ipsum  dolor sit amet, consectetur.</p>
+                </div>
+            </div>
         </div>
 
+        <div class="login flex_elements">
 
-        <form class="login">
-
-            <label><b>EMAIL</b></label>
-            <br><br>
-            <input type="text" name="email">
-            <hr>
-            <br><br>
-            <label><b>PASSWORD</b></label>
-            <br><br>
-            <input type="text" name="password">
-            <hr>
-            <br>
-
-            <button type="button" id="btn1" ><b>Sign Up</b></button>
-            <br>
-            <hr>
-            <button type="button" id="btn2" >Forgot Password?</button> 
-
-        </form>
+                <div class="flex_elements">
+                    <label><b>EMAIL</b></label>            
+                    <input type="text" name="email" class="input_style">
+                </div>
+                <hr class="hr_style">
+                <div class="flex_elements">
+                    <label><b>PASSWORD</b></label>            
+                    <input type="text" name="password" class="input_style">
+                </div> 
+                <hr class="hr_style">
+                <div class="flex_elements">
+                    <button type="button" id="btn1" class="button-primary"><b>Sign Up</b></button>
+                </div>
+                <hr class="hr_style">
+                <div class="flex_elements">
+                    <button type="button" id="btn2" class="button-primary">Forgot Password?</button> 
+                </div>
+            </div>
     </div>
 </body>
 </html>
