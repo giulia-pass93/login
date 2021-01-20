@@ -6,45 +6,41 @@
     <title>Esercizio1</title>
 
     <link rel="stylesheet" href="style.css">
-
+    
 </head>
 
-<body style="background-image: linear-gradient(to right,rgb(73, 4, 119),violet); margin:0; padding:0; height: 100%;">
-
+<body>
     <div class ="main">
-
-        <div class="intestazione">
-               
-                <h1 ><b>Duis mollis,<br>est non<br>commodo<br>luctus.</b></h1>
-
-                <p>Nulla vitae elit libero, a<br><br>pharetra augue. Lorem ipsum<br><br>dolor sit amet, consectetur.</p>
-        
+        <div class="intestazione flex_elements">
+            <div class= "w_180">
+                <div name="titolo">
+                <h1 ><b>Duis mollis, est non commodo luctus.</b></h1>
+                </div>
+                <div name="par" class="line_height">
+                <p>Nulla vitae elit libero, a  pharetra augue. Lorem ipsum  dolor sit amet, consectetur.</p>
+                </div>
+            </div>
         </div>
 
-
-        <form class="login">
-
-<<<<<<< HEAD
-            
-=======
->>>>>>> 0bfca1cc65f6eb05cfb874e263464908aeea397e
-            <label><b>EMAIL</b></label>
-            <br><br>
-            <input type="text" name="email">
-            <hr>
-            <br><br>
-            <label><b>PASSWORD</b></label>
-            <br><br>
-            <input type="text" name="password">
-            <hr>
-            <br>
-
-            <button type="button" id="btn1" ><b>Sign Up</b></button>
-            <br>
-            <hr>
-            <button type="button" id="btn2" >Forgot Password?</button> 
-
-        </form>
+        <div class="login flex_elements">
+            <div name="email">
+                <label><b>EMAIL</b></label>            
+                <input type="text" name="email">
+            </div>
+          <hr>
+            <div name="password">
+                <label><b>PASSWORD</b></label>            
+                <input type="text" name="password">
+            </div> 
+          <hr>           
+            <div name="btn1" class="center" >
+                <button type="button" id="btn1" class="button-primary"><b>Sign Up</b></button>
+            </div>
+          <hr>          
+            <div name="btn2" class="center" >
+                <button type="button" id="btn2" class="button-primary">Forgot Password?</button> 
+            </div>       
+        </div>
     </div>
 </body>
 </html>
