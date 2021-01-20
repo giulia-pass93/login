@@ -11,58 +11,69 @@ body{
     height: 100vh;
 }
 
-.flex_elements{
+.w_180{
+    width: 180px; 
+}
+
+.line_height{
+    line-height: 25px;
+}
+
+.flex_elements {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flex_elements >div{
     display: flex;
     flex-direction: column;
 }
 
+.center{
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .intestazione{
-           
-    /*TESTO*/
     color: white; 
     font-family:Arial, Helvetica, sans-serif;
     font-size: 13px;
     text-align:initial;
-    justify-content: center;
     align-items: center;
-    
-    /*CARATTERISTICHE*/
+
     background-image: url(space.jpg);
     padding:30px;
-    width: 350px;
-    height: 350px;            
+    width: 240px;
+    height: 240px;            
     border-radius: 10px;     
 }
 
-.login{
-  
+.login{ 
     color: grey;
     font-size: 11px;
     font-family: Arial, Helvetica, sans-serif;
-    width: 350px;
-    height: 500px;
+    width: 240px;
+    height: 355px;
 
-    justify-content: space-evenly;
+    justify-content: center;
     background-color: white;
     border-radius: 10px;
-    padding: 30px;
-
+    padding: 35px;
 }
 
-.login input{
+input{
     border: 0px;
     outline: none;
-}
-
-.hr_style{
-    border-width:1px; 
-    margin-left:0px; 
-    margin-right:0px;
-}
-
-.input_style{
     height:30px; 
     margin-top:10px;
+    font-size: 15px;
+}
+
+hr{
+    border-width:1px; 
+    margin: 10px 0px 10px 0px;
 }
 
 .login .button-primary{
@@ -75,11 +86,11 @@ body{
     cursor: pointer;
 }
 
-
 .login #btn1{
     color:white;
     background-color:darkturquoise;
     padding: 15px 33px;
+    width: 150px;
 }
 
 .login #btn2{
@@ -92,39 +103,29 @@ body{
         flex-direction: column;    
     }
   }
-@media screen and (max-width: 450px){
-    
+@media screen and (max-width: 450px){   
     .intestazione{
         width: 260px;
         height: 260px; 
     }
-
     .login{
         width: 260px;
         height: 410px;
-    }
-    
+    }   
     .intestazione p{
         display: none;
     }
-
 }
-/*A questa dimensione i bottoni non si dimensionano più in funzione del div */
-
-@media screen and (max-width: 350px){
-    
+@media screen and (max-width: 350px){   
     .intestazione{
         width: 160px;
         height: 160px; 
     }
-
     .login{
         width: 160px;
         height: 310px;
     }
-
     .intestazione p{
         display: none;
     }
-
 }
