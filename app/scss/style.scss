@@ -20,14 +20,14 @@ body{
     margin:0; 
     padding:0; 
 
-    .main{  
-        display: flex;
+    .main{                                  // .main{} block
+        display: flex;                      //HTML class: <div class= "main"></div>
         align-items: $position;
         justify-content: $position;
         height: 100vh;
 
-        .intestazione{
-            color: $color_a; 
+        .intestazione{                      // .main__intestazione{}  blocco__el
+            color: $color_a;                //HTML class: <div class="main__intestazione"></div>
             font-family:$style_text;
             font-size: 13px;
             text-align:initial;
@@ -41,13 +41,13 @@ body{
             
             @include flex_elements;
 
-            div:first-child{
-                width: 180px;
+            div:first-child{                // .main__intestazione__div--width{}
+                width: 180px;               //HTML class: <div class="main__intestazione__div--width"></div>
             }
         }
 
-        .login{ 
-            color: $color_b;
+        .login{                             // .main__login{}  blocco__el
+            color: $color_b;                //HTML class: <div class="main__login"></div>
             font-size: 11px;
             font-family: $style_text;
             width: 240px;
@@ -60,20 +60,20 @@ body{
 
             @include flex_elements;
 
-            input{
-                border: 0px;
-                outline: none;
+            input{                           //.main__login__input{}  blocco__el__sotto el
+                border: 0px;                 //HTML class: <input class="main__login__input">Email</input>
+                outline: none;               //HTML class: <input class="main__login__input">Password</input>
                 height:30px; 
                 margin-top:10px;
                 font-size: 15px;
             }
             
-            hr{
-                border-width:1px; 
+            hr{                             //.main__login__hr{}  blocco__el__sotto el
+                border-width:1px;           //HTML class: <hr class="main__login__hr">
                 margin: 10px 0px 10px 0px;
             }
 
-            button{
+            button{                         //.main__login__button{}  blocco__el__sotto el
                 text-align: $position;
                 font-size: 15px;
                 font-family:$style_text;
@@ -83,28 +83,30 @@ body{
                 cursor: pointer;
             }
 
-            #btn1{
+            #btn1{                          //.main__login__button--btn1{}  blocco__el__sotto el--modifier
                 color: $color_a;
                 background-color:darkturquoise;
                 padding: 15px 33px;
                 width: 150px;
             }
 
-            #btn2{
+            #btn2{                          //.main__login__button--btn2{} 
                 color: $color_b;
                 background-color: $color_a;
-            }
+            }                                   /*HTML class: <buttom class="main__login__button  main__login__button--btn1"></buttom>
+                                                              <buttom class="main__login__button  main__login__button--btn2"></buttom>
+                                                */
 
-        }
+        }                                           
     }
 }
 
-.line_height{
+.line_height{                     
     line-height: 25px;
 }
 
 .center{
-    align-items: $position;
+    align-items: $position;         //.main__login__div-btn--center{}  
     margin-top: 20px;
     margin-bottom: 20px;
 }
