@@ -1,0 +1,164 @@
+
+$style_text: Arial, Helvetica, sans-serif;
+$color_a: white;
+$color_b: grey;
+$position: center;
+
+@mixin flex_elements {
+    display: flex;
+    flex-direction: column;
+    justify-content: $position;
+
+    div{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+body{
+    background-image: linear-gradient(to right,rgb(73, 4, 119),violet);
+    margin:0; 
+    padding:0; 
+
+    .main{                                  // .main{} block
+        display: flex;                      //HTML class: <div class= "main"></div>
+        align-items: $position;
+        justify-content: $position;
+        height: 100vh;
+
+        .intestazione{                      // .main__intestazione{}  blocco__el
+            color: $color_a;                //HTML class: <div class="main__intestazione"></div>
+            font-family:$style_text;
+            font-size: 13px;
+            text-align:initial;
+            align-items: $position;
+        
+            background-image: url(img.jpg);
+            padding:30px;
+            width: 240px;
+            height: 240px;            
+            border-radius: 10px; 
+            
+            @include flex_elements;
+
+            div:first-child{                // .main__intestazione__div--width{}
+                width: 180px;               //HTML class: <div class="main__intestazione__div--width"></div>
+            }
+        }
+
+        .login{                             // .main__login{}  blocco__el
+            color: $color_b;                //HTML class: <div class="main__login"></div>
+            font-size: 11px;
+            font-family: $style_text;
+            width: 240px;
+            height: 355px;
+        
+            justify-content: $position;
+            background-color: $color_a;
+            border-radius: 10px;
+            padding: 35px;
+
+            @include flex_elements;
+
+            input{                           //.main__login__input{}  blocco__el__sotto el
+                border: 0px;                 //HTML class: <input class="main__login__input">Email</input>
+                outline: none;               //HTML class: <input class="main__login__input">Password</input>
+                height:30px; 
+                margin-top:10px;
+                font-size: 15px;
+            }
+            
+            hr{                             //.main__login__hr{}  blocco__el__sotto el
+                border-width:1px;           //HTML class: <hr class="main__login__hr">
+                margin: 10px 0px 10px 0px;
+            }
+
+            button{                         //.main__login__button{}  blocco__el__sotto el
+                text-align: $position;
+                font-size: 15px;
+                font-family:$style_text;
+                border-radius: 30px;
+                border: 0px;
+                outline: none;
+                cursor: pointer;
+            }
+
+            #btn1{                          //.main__login__button--btn1{}  blocco__el__sotto el--modifier
+                color: $color_a;
+                background-color:darkturquoise;
+                padding: 15px 33px;
+                width: 150px;
+            }
+
+            #btn2{                          //.main__login__button--btn2{} 
+                color: $color_b;
+                background-color: $color_a;
+            }                                   /*HTML class: <buttom class="main__login__button  main__login__button--btn1"></buttom>
+                                                              <buttom class="main__login__button  main__login__button--btn2"></buttom>
+                                                */
+
+        }                                           
+    }
+}
+
+.line_height{                     
+    line-height: 25px;
+}
+
+.center{
+    align-items: $position;         //.main__login__div-btn--center{}  
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 850px) {
+    .main {
+        flex-direction: column;    
+    }
+  }
+@media screen and (max-width: 450px){   
+    .intestazione{
+        width: 260px;
+        height: 260px; 
+    }
+    .login{
+        width: 260px;
+        height: 410px;
+    }   
+    .intestazione p{
+        display: none;
+    }
+}
+@media screen and (max-width: 350px){   
+    .intestazione{
+        width: 160px;
+        height: 160px; 
+    }
+    .login{
+        width: 160px;
+        height: 310px;
+    }
+    .intestazione p{
+        display: none;
+    }
+}
+
+/*
+input:focus{
+    background-color: lightblue;
+}
+
+#btn1:hover{
+    width: 95px;
+    height: 95px;
+    border-radius: 100px;
+    background-color: lightsalmon;    
+}
+
+#btn2:active{
+    background-color:yellow;
+    width: 400px;
+    height: 100px;
+    border-radius: 0px;
+}
+*/
